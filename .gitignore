@@ -34,6 +34,9 @@ migrate_working_dir/
 # Exclude all build directories except docs/
 **/build/
 !docs/
+# But exclude debug/symbol files from docs/
+docs/**/*.symbols
+docs/.last_build_id
 
 # Symbolication related
 app.*.symbols
