@@ -31,7 +31,13 @@ migrate_working_dir/
 .flutter-plugins-dependencies
 .pub-cache/
 .pub/
-/build/
+# Exclude all build directories except docs/
+**/build/
+!docs/
+# But exclude debug/symbol files from docs/
+docs/**/*.symbols
+docs/.last_build_id
+docs/assets/NOTICES
 
 # Symbolication related
 app.*.symbols
